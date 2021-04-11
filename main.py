@@ -86,7 +86,7 @@ def process_url(token, url):
     except requests.exceptions.HTTPError as e:
         return f'{e}\nНе удалось получить сокращенную ссылку, проверьте ввод'
 
-    return f'Битлинк {bitlink}'
+    return f'{bitlink}'
 
 
 def main():
