@@ -24,21 +24,21 @@ BITLY_TOKEN=ваш_ключ
     cd bitly
     ```
 2. Установите вирт. окружение.
-  ```bash
-  python -m venv venv
-  ```
+    ```bash
+    python -m venv venv
+    ```
 3. Активируйте.
-  ```bash
-  venv\Scripts\activate.bat
-  ```
-  или
-  ```bash
-  source venv/bin/activate
-  ```
+    ```bash
+    venv\Scripts\activate.bat
+    ```
+    или
+    ```bash
+    source venv/bin/activate
+    ```
 4. Установите необходимые пакеты.
-  ```bash
-  pip install -r requirements.txt
-  ```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 ## Запуск
 ```
@@ -48,14 +48,14 @@ python main.py URL
 ### Примеры
 
 - Сократить ссылку http://ya.ru.
-  ```
-  python main.py http://ya.ru
-  ```
+    ```
+    python main.py http://ya.ru
+    ```
 
 - Получить количество переходов по сокращенной ссылке https://bit.ly/abc123.
-  ```
-  python main.py https://bit.ly/abc123
-  ```
+    ```
+    python main.py https://bit.ly/abc123
+    ```
 
 ### Цель проекта
 
