@@ -6,7 +6,6 @@ import requests
 from dotenv import load_dotenv
 
 
-BITLY_TOKEN = os.getenv('BITLY_TOKEN')
 BITLY_API_URL = 'https://api-ssl.bitly.com/v4'
 
 
@@ -89,11 +88,12 @@ def process_url(token, url):
 
 def main():
     load_dotenv()
+    bitly_token = os.getenv('BITLY_TOKEN')
 
     arg_parser = create_argument_parser()
     user_link = arg_parser.parse_args().url
 
-    print(process_url(BITLY_TOKEN, user_link))
+    print(process_url(bitly_token, user_link))
 
 
 if __name__ == '__main__':
